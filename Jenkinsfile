@@ -6,6 +6,7 @@ pipeline {
         stage ('Groovy Version Check') {
             steps {
                 sh 'groovysh --version'
+                sh 'cat /home/README.md'
             }
         }
     }
