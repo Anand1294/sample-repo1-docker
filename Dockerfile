@@ -1,3 +1,2 @@
-FROM alpine:latest
+FROM groovy:latest
 COPY README.md /home
-RUN apk add curl
