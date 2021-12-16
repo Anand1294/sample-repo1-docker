@@ -6,9 +6,11 @@ pipeline {
     stages {
         stage ('Groovy Version Check') {
             steps {
-                sh 'groovysh --version'
-                sh 'cat /home/README.md'
-                sh 'groovysh; println message'
+                script {
+                    groovysh --version
+                    cat /home/README.md
+                    println ("Message from Container : "+message)
+                }
             }
         }
     }
