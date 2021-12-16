@@ -7,7 +7,7 @@ pipeline {
             steps {
                 sh 'groovysh --version'
                 sh 'cat /home/README.md'
-                sh 'groovysh"
+                sh 'println "Hello from container"'
             }
         }
     }
