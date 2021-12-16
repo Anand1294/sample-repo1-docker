@@ -1,4 +1,4 @@
-def message="Hello from container"
+def message="Hello Anand, Welcome to Groovy Container!"
 pipeline {
     agent {
       dockerfile true
@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     //groovysh --version
-                    //cat /home/README.md
+                    cat /home/README.md
                     println ("Message from Container : "+message)
                 }
             }
