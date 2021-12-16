@@ -8,7 +8,7 @@ pipeline {
             steps {
                 sh 'groovysh --version'
                 sh 'cat /home/README.md'
-                sh 'groovysh; println (message)'
+                sh 'groovysh; println ("message")'
             }
         }
     }
