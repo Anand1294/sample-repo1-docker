@@ -8,7 +8,7 @@ pipeline {
             steps {
                 script {
                     //groovysh --version
-                    cat /home/README.md
+                    sh 'cat /home/README.md'
                     println ("Message from Container : "+message)
                 }
             }
